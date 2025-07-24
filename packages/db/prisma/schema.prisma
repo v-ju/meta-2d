@@ -12,7 +12,7 @@ datasource db {
 model User {
   id          String  @id @unique @default(cuid())
   username    String  @unique
-  password    String  @unique
+  googleId    String
   avatarId    String
   role        Role
 	space       Space[]
